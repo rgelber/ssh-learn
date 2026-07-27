@@ -27,8 +27,7 @@ def test_record_uses_typed_config_name(home, fake_ssh_config):
 def test_record_by_ip_uses_dashed_alias(home, fake_ssh_config):
     fake_ssh_config("198.168.1.101", hostname="198.168.1.101", user="admin")
     _, alias = recorder.record_connection("198.168.1.101", [], [])
-    assert alias == "192-168-1-101"
-
+    assert alias == "198-168-1-101"
 
 def test_reconnect_is_idempotent(home, fake_ssh_config):
     fake_ssh_config("hostname", hostname="192.168.1.100", user="someuser")

@@ -60,7 +60,7 @@ def test_hostnames_equivalent_short_vs_fqdn():
         ("hostname", "192.168.1.100", "hostname"),      # the reported bug
         ("web1.prod.example.com", "web1.prod.example.com", "web1"),
         ("deploy@db.internal", "10.0.0.4", "db"),
-        ("198.168.1.101", "198.168.1.101", "192-168-1-101"),  # not just "10"
+        ("198.168.1.101", "198.168.1.101", "198-168-1-101"),  # not just "10"
         ("bastion", "192.168.1.1", "bastion"),
     ],
 )
