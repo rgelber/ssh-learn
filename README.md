@@ -91,7 +91,7 @@ never touched.
 ## Development
 
 ```sh
-git clone https://github.com/yourname/ssh-learn
+git clone https://github.com/rgelber/ssh-learn
 cd ssh-learn
 python -m venv .venv && . .venv/bin/activate
 pip install -e '.[dev]'
