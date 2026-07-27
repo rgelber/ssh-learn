@@ -22,7 +22,7 @@ disabled entirely.
 ## Install
 
 ```sh
-cd ssh-learn
+cd ssh-learn                # Move inside the git project directory 
 pipx install .              # or: pip install --user ssh-learn
 ssh-learn init              # writes the zsh integration, wires up ssh config
 source ~/.zshrc
